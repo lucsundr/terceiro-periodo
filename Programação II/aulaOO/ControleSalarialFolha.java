@@ -10,5 +10,5 @@ public class ControleSalarialFolha {
 	public double getTotalSalario() {
 		return this.totalSalarios;
 	}
-	
+
 }

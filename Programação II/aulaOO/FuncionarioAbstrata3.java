@@ -57,4 +57,6 @@ public abstract class FuncionarioAbstrata3 {
 	public void setStatus(String status) {
 		this.status = status;
 	}
+
+//	protected abstract boolean verificaSenha(int senha);
 }
