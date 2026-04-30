@@ -10,8 +10,7 @@ public class TesteException2 {
 	private static void metodo1() {
 		System.out.println("Início do método 1");
 		metodo2();
-		System.out.println("Fim do método 1");
-		
+		System.out.println("Fim do método 1");		
 	}
 
 	private static void metodo2() {
@@ -25,10 +24,9 @@ public class TesteException2 {
 				System.out.println(i);
 			}
 		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("Exception paga (catched): "+e);
+			System.out.println("Exception pega (catched): "+e);
 		}
 		
-		System.out.println("Fim do método 2");
+		System.out.println("Fim do método 2");	
 	}
-
 }

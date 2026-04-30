@@ -16,12 +16,13 @@ public class TestaMath {
 		//max
 		int i1 = 12;
 		int i2 = 10;
-		System.out.println("O máximo entre i1 e i2 é"+Math.max(i1, i2));
+		System.out.println("O máximo entre i1 e i2 é: "+Math.max(i1, i2));
 		
 		//min
-		System.out.println("O máximo entre i1 e i2 é"+Math.min(i1, i2));
+		System.out.println("O mínimo entre i1 e i2 é: "+Math.min(i1, i2));
 		
 		//ceil
+		@SuppressWarnings("unused")
 		double d3 = 4.3;
 		double d4 = 4.2;
 		System.out.println("O teto de d4 é: "+Math.ceil(d4));
@@ -44,13 +45,14 @@ public class TestaMath {
 		System.out.println("Raiz quadrada de um número (4): "+Math.sqrt(4));
 		
 		//sin
-		System.out.println("Função seno(sin): seno de 90° em radianos: "+Math.sin(90));
+		System.out.println("Função seno (sin): seno de 90º em radianos: "+Math.sin(1.5708));
 		
 		//toDegrees
-		System.out.println("Função seno(sin): seno de 90°: "+Math.sin(Math.toRadians(90)));
+		System.out.println("Quanto é 1.5707963267948966 em graus? "+Math.toDegrees(1.5707963267948966));
+		System.out.println("Função seno (sin): seno de 90º: "+Math.sin(Math.toRadians(90)));
 		
 		//toRadians
-		System.out.println("Quanto e 90° em radianos: "+Math.toRadians(90));
+		System.out.println("Quanto é 90º em radianos: "+Math.toRadians(90));
 	}
 
 }

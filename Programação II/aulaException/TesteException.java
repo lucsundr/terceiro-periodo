@@ -23,6 +23,8 @@ public class TesteException {
 			System.out.println(i);
 		}
 		System.out.println("Fim do método 2");
+
+		
 	}
 
 }

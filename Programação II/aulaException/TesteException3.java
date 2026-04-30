@@ -1,17 +1,20 @@
 package aulaException;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 public class TesteException3 {
-	public static void main (String[] args) throws FileNotFoundException {
+	@SuppressWarnings("resource")
+	public static void main(String[] args) {
 		//Posso ter vários catches com Exceptions
-		new java.io.FileReader("arquivoDeTeste.txt");
-		//		} catch (FileNotFoundException e) {
-		//		TODO Auto-generated catch bloc
-		// 		e.printStackTrace();
-		//		} catch (IOException e) {
-		//		TODO: handle exception
-		//}
+		try {
+			new java.io.FileReader("arquivoDeTeste.txt");
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}  catch (@SuppressWarnings("hiding") IOException e) {
+			// TODO: handle exception
+		}
 	}
-	
+
 }
